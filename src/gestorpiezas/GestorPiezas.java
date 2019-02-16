@@ -28,18 +28,18 @@ public class GestorPiezas {
             switch(opcion){
                 
 		// Añadir una pieza nueva
-                case 1:		    
-                    System.out.println("Ponga su código de identificación");
+                case 1:
+		    // Primero pido todos los datos de la nueva pieza...
+                    System.out.println("Dame su código de identificación");
                     id = teclado.nextLine();
-                    System.out.println("Ponga su tipo");
+                    System.out.println("Dame su tipo");
                     tipo = teclado.nextLine();
-                    System.out.println("Ponga su precio");
+                    System.out.println("Dame su precio");
                     precio = teclado.nextInt();
                     teclado.nextLine();
                     System.out.println("¿La tenemos en stock? s/n");
                     if(teclado.nextLine().equals("s"))
                     {
-                        System.out.println("Ok, si tu lo dices.");
                         disponible = true;
                         disponible = true;
                     }
